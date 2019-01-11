@@ -1,6 +1,6 @@
 import "antd/dist/antd.css";
 import React from "react";
 import ReactDOM from "react-dom";
-import { ASelect } from "./ASelect";
+import { VISelect } from "./VISelect";
 
-ReactDOM.render(<ASelect />, document.getElementById("root"));
+ReactDOM.render(<VISelect />, document.getElementById("root"));
