@@ -1,13 +1,10 @@
 import { Select } from "antd";
 import React from "react";
-import { dataFactory } from "./dataFactory";
 
 export class ASelect extends React.Component {
   state = {
     v: 20
   };
-
-  data = dataFactory(50);
 
   onChange = v => this.setState({ v });
 
@@ -21,7 +18,7 @@ export class ASelect extends React.Component {
         optionFilterProp="children"
         onChange={this.onChange}
       >
-        {this.data.map(x => (
+        {this.props.data.map(x => (
           <Select.Option value={x.id} key={x.id}>
             {x.v}
           </Select.Option>
